@@ -14,38 +14,55 @@
 <body>
   <main class="main">
     
-      <!-- Sign-up form start -->
+      <div class="sign-up-form">
+        <!-- Sign-up form start -->
+        <div class="container">
+          <div class="main-image">
+            <picture class="hero">
+              <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 47.5rem)">
+              <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="container">
+          <h1 class="main-title">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="list-items">
+            <li><img src="./assets/images/icon-list.svg">Product discovery and building what matters</li>
+            <li><img src="./assets/images/icon-list.svg">Measuring to ensure updates are a success</li>
+            <li><img src="./assets/images/icon-list.svg">And much more!</li>
+          </ul>
+          <form action="/" class="subscribe-form">
+            <div class="form-control">
+              <label for="email">Email address <span class="error-msg">Valid email required</span></label>
+              <input type="email" name="email" id="email" placeholder="email@company.com">
+            </div>
+            <div class="form-control">
+              <button type="submit" class="btn-submit">Subscribe to monthly newsletter</button>
+            </div>
+          </form>
+        </div>
+        <!-- Sign-up form end -->
+      </div>
     
-      Stay updated!
-    
-      Join 60,000+ product managers receiving monthly updates on:
-    
-      Product discovery and building what matters
-      Measuring to ensure updates are a success
-      And much more!
-    
-      Email address
-      email@company.com
-    
-      Subscribe to monthly newsletter
-    
-      <!-- Sign-up form end -->
-    
-      <!-- Success message start -->
-    
-      Thanks for subscribing!
-    
-      A confirmation email has been sent to ash@loremcompany.com.
-      Please open it and click the button inside to confirm your subscription.
-    
-      Dismiss message
-    
-      <!-- Success message end -->
+      <div class="success-message hidden">
+        <!-- Success message start -->
+        <div class="success-image">
+          <img src="./assets/images/icon-success.svg" alt="Success Icon">
+        </div>
+        <h1 class="main-title">Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+        <div class="form-control"><button class="btn-dismiss">Dismiss message</button></div>
+        <!-- Success message end -->
+      </div>
     
   </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontendmentor</a>. 
+    Coded by <a href="#">Elrico Landrew</a>.
   </div>
 </body>
 </html>
